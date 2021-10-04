@@ -44,6 +44,7 @@ atribuída a ela, com a seguinte frase:
 */
 
 
+console.log('A função ' + varShowName.name + ' retorna ' + varShowName() + '.');
 
 /*
 Crie uma função literal chamada `calculator`, que funcione assim:
@@ -57,7 +58,31 @@ vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
   - Se o operador não for válido, retornar a frase:
   "Operação inválida."
 */
-// ?
+function calculator(operator){
+  return function(a,b){
+    var result;
+    switch(operator){
+      case '+':
+        result = a + b;
+      break;
+      case '-':
+        result = a - b;
+      break;
+      case '*':
+        result = a * b;
+      break;
+      case '/':
+        result = a / b;
+      break;
+      case '%':
+        result = a % b;
+      break;
+      default:
+        return 'Operação inválida.';
+    }
+    return 'Resultado da operação: ' + a + ' ' + operator + ' ' + b + ' ' + ' = ' + ' ' + result'.';
+  };
+}
 
 /*
 Declare uma variável chamada `sum`, que receberá a função acima, passando como
