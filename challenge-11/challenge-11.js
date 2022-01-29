@@ -47,7 +47,20 @@ Se verdadeiro, retornar `true`. Senão, retornar false.
 Após a função, mostrar a mensagem no console:
 'The person has more than 25 years old? [TRUE/FALSE]'
 */
-// ?
+    function moreThan (idade){
+            
+        if(idade < 25){
+            console.log('The person has more than 25 years old?' + ' ' + false);
+        }else{
+            console.log('The person has more than 25 years old?' + ' ' + true);
+        }
+
+        if(person.age > idade){
+          return true;
+        }else{
+          return false;
+        }  
+    } 
 
 /*
 Faça um loop de 0 a 20, que adicione cada número como um item de um
