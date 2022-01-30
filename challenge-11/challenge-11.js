@@ -36,9 +36,13 @@ esse objeto tem.
 Após o loop, mostre a frase:
 'The person has [COUNTER] properties'
 */
+var counter = 0;
+
 for(var column in person){
-console.log('The ' + column + ' of person is ' + person[column])
+console.log('The ' + column + ' of person is ' + person[column]);
+    counter++;
 };
+    console.log('The person has ' + counter + ' properties');
 
 /*
 Crie uma função chamada `moreThan`, que vai verificar se a pessoa (objeto
