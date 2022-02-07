@@ -44,7 +44,7 @@ console.log(brasil);
 Crie um novo array chamado `newSul`, que receba somente os estados do sul,
 pegando do array `brasil`. Não remova esses itens de `brasil`.
 */
-var newSul = ['Paraná', 'Santa Catarina', 'Rio Grande do Sul'];
+var newSul = brasil.slice(2,5);
 /*
 Mostre no console os estados que estão em `newSul`.
 */
@@ -98,13 +98,14 @@ propriedades:
 - `estado`: que será o estado do array `brasil`.
 */
   var newBrasil = [];
-for(var i = 0; i < 1; i++){
   brasil.forEach(function(item, index, array){
-    console.log(newBrasil = [{id :index, estado:item}]);
+    newBrasil.push({
+      id :index,
+      estado:item
+    });
 
 });
-    newBrasil += brasil;
-}
+
 
 /*
 Mostre o array `newBrasil` no console
