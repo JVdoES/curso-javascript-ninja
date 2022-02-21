@@ -67,13 +67,17 @@ Mostre no console as idades de cada pessoa, com a frase:
 - "[NOME COMPLETO] tem [IDADE] anos."
 */
 console.log( '\nIdade das pessoas:' );
-// ?
-
+  console.log(Joao.getFullName() + ' tem ' + Joao.getAge() + ' anos.');
 /*
 Adicione alguns anos à cada pessoa, e mostre no console a nova idade de
 cada um. A frase deverá ser no formato:
 - "[NOME COMPLETO] agora tem [NOVA IDADE] anos."
 */
 console.log( '\nNova idade das pessoas:' );
-// ?
+Joao.addAge(5);
+Maria.addAge(2);
+Jose.addAge(7);
+  console.log(Joao.getFullName() + ' agora tem ' + Joao.getAge() + ' anos.');
+  console.log(Maria.getFullName() + ' agora tem ' + Joao.getAge() + ' anos.');
+  console.log(Jose.getFullName() + ' agora tem ' + Joao.getAge() + ' anos.');
 })();
