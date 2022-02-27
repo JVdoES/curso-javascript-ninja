@@ -1,6 +1,9 @@
+(function(){
+  
 /*
 1. Envolva todo o conteúdo desse desafio em uma IIFE.
 2. Adicione a diretiva 'use strict';
+'use strict';
 3. Crie um arquivo index.html e adicione esse script à ele.
 */
 
@@ -14,7 +17,7 @@ Ex: no caso do nome ser "Fernando", deve mostrar as frases:
 E assim por diante, até a última.
 */
 console.log( 'As letras do seu nome:' );
-// ?
+var name = 'João';
 
 /*
 - Declare uma variável chamada `fullName`, que receba seu nome completo,
@@ -68,3 +71,4 @@ Ex.: Nomes que deveriam funcionar: "Fernando", "RoBertO", "gabriEla", etc.
 */
 console.log( '\nNome com letras intercaladas entre caixa alta e baixa:' );
 // ?
+}());
