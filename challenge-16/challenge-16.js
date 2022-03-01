@@ -16,8 +16,12 @@ Ex: no caso do nome ser "Fernando", deve mostrar as frases:
 - "e é a 2ª letra do meu nome."
 E assim por diante, até a última.
 */
+  'use strict';
 console.log( 'As letras do seu nome:' );
-var name = 'João';
+var nome = 'João Vitor';
+for(var i = 0; i < nome.length; i++){
+	console.log(nome.charAt(i) + ' é a ' + nome.indexOf('',i + 1) + 'ª letra do meu nome.');
+}
 
 /*
 - Declare uma variável chamada `fullName`, que receba seu nome completo,
