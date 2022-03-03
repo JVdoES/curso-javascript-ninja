@@ -54,21 +54,24 @@ O resultado final deve ficar mais ou menos assim:
 5 nomes foi somente uma sugestão ;)
 */
 console.log( '\nMeus amigos:' );
-// ?
-
+var arr = ['João, Maria, José, Ana Clara e Fernando'] + [' são meus amigos.'];
+console.log(arr);
 /*
 Usando o replace(), faça a string "Roberto" virar "Roberta".
 Mostre o resultado no console.
 */
 console.log( '\nEra "Roberto", agora é:' );
-// ?
+var nome = 'Roberto';
+	console.log(nome.replace('to','ta'));
 
 /*
 Mostre no console a parte "nando" da string "Fernando". Use o método que
 faz a busca do final para o início da string.
 */
 console.log( '\nParte de uma string:' );
-// ?
+var nome = 'Fernando';
+nome.lastIndexOf('nando',8);
+console.log(nome.slice(3,8));
 
 /*
 Declare uma variável chamada `myName`, que receba o seu primeiro nome,
@@ -80,5 +83,15 @@ de qualquer tamanho, escrito de qualquer forma.
 Ex.: Nomes que deveriam funcionar: "Fernando", "RoBertO", "gabriEla", etc.
 */
 console.log( '\nNome com letras intercaladas entre caixa alta e baixa:' );
-// ?
+var myName = "Vitor Freitas";
+var newVar = "";
+for(var i = 0; i < myName.length; i++){
+	if(i % 2 === 0){
+		newVar += myName[i].toUpperCase();
+	}else{
+		newVar += myName[i].toLowerCase();
+	}
+	
+}
+console.log(newVar);
 }());
