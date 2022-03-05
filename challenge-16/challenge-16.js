@@ -70,8 +70,7 @@ faz a busca do final para o início da string.
 */
 console.log( '\nParte de uma string:' );
 var nome = 'Fernando';
-nome.lastIndexOf('nando',8);
-console.log(nome.slice(3,8));
+console.log(nome.substring(3,8));
 
 /*
 Declare uma variável chamada `myName`, que receba o seu primeiro nome,
